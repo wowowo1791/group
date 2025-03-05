@@ -4,7 +4,7 @@
 
 For this project, we were tasked with developing various online ordering systems for different scenarios, where each scenario involved creating a menu of items that users could add to their shopping cart. We focused on applying DOM manipulation using JavaScript, working with arrays, and utilizing loops to handle the interactions between users and the items they select. The scenarios included building an online bookstore, a restaurant menu, an amusement park ticket system, and a flower shop.
 
-Each webpage featured core elements such as a list of available items (whether books, _____, or ______), a shopping cart to track selections, and functionality to allow users to remove the last item they added. The project allowed us to practice creating interactive elements that enhance user experience, while also refining our understanding of JavaScript logic for dynamic content generation and manipulation. We chose this project to further develop our skills in JavaScript and DOM manipulation while working as a team to build cohesive, functional web applications.
+Each webpage featured core elements such as a list of available items (whether books, flowers, or foods), a shopping cart to track selections, and functionality to allow users to remove the last item they added. The project allowed us to practice creating interactive elements that enhance user experience, while also refining our understanding of JavaScript logic for dynamic content generation and manipulation. We chose this project to further develop our skills in JavaScript and DOM manipulation while working as a team to build cohesive, functional web applications.
 
 ### Live Link
 
@@ -37,11 +37,11 @@ List any websites that you might reference to influence your styling choices. Li
 
 ### Members & Responsibilities
 
+#### Anthony Arroyo (President & Analyst)
+Anthony Arroyo is the President and Analyst of the team. As President, he oversees the overall project and submits assignments, while as Analyst, he writes the Key Takeaways section, summarizing the key lessons learned from the project. Anthony worked on the **Flower Shop** scenario, developing an online ordering system for customers with flowers available for selection and the ability to add/remove flowers from the cart.
+
 #### Daniel Shin (Architect & Scrum Master)
-Daniel Shin is responsible for writing the Core Webpages section and overseeing the project’s workflow as the Scrum Master. He worked on the Online Bookstore webpage, ensuring all technical aspects were in place and that the project progressed smoothly. As Scrum Master, Daniel facilitated communication and kept the team on track with their tasks.
+Daniel Shin is the Architect and Scrum Master for the project. As Architect, he is responsible for writing the Core Webpages section and overseeing the technical aspects of the project. Also as Scrum Master, Daniel ensures the team stays on track and facilitates communication among members. Daniel worked on the **Online Bookstore** scenario, developing an online ordering system for customers with the books available for. selection and the ability to add/remove flowers from the cart.
 
 #### Karyn Black (Designer)
-Karyn Black is the Designer for the project. She is responsible for writing the Design Choices section and contributing to the visual and user experience aspects of the project. The specific scenario Karyn worked on is still to be determined.
-
-#### Anthony Arroyo (President & Analyst)
-Anthony Arroyo is the President and Analyst of the team. As President, he oversees the overall project and submits assignments, while as Analyst, he writes the Key Takeaways section, summarizing the key lessons learned from the project. The specific scenario Anthony worked on is still to be determined.
+Karyn Black is the Designer for the project. She is responsible for writing the Design Choices section and contributing to the visual and user experience aspects of the project. Karyn worked on the **Restaurant Menu** scenario, developing an online ordering system for customers with a menu of available items and the ability to add/remove items from the cart.
