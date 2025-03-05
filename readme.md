@@ -2,7 +2,7 @@
 
 ### Project Summary
 
-Brief description of your what your project is about and why you chose that topic.
+Group projects we are doing over the whole semester.
 
 ### Live Link
 
@@ -24,4 +24,8 @@ List any websites that you might reference to influence your styling choices. Li
 
 ### Members & Responsibilities
 
-List all members, their roles, and their scenario titles
+Anthony Arroyo (President & Analyst)
+
+Daniel Shin (Architect & Scrum Master)
+
+Karyn Black (Designer)
