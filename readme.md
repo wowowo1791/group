@@ -8,7 +8,7 @@ Each webpage featured core elements such as a list of available items (whether b
 
 ### Live Link
 
-[Blog Page](https://wowowo1791.github.io/group/homework-5) 
+[Main Page](https://wowowo1791.github.io/group/homework-5) 
 
 [Online BookStore](https://wowowo1791.github.io/group/homework-5/onlinebookstore.html)
 
@@ -18,18 +18,16 @@ Understanding of why we are doing this project
 
 ### Core Webpages
 
-#### Online Bookstore Page
+The project consists of several core webpages, each focused on a different scenario. Below is a brief description of each page and its functionality:
 
-The Online Bookstore Page serves as the main interface for users to browse through a selection of available books and interact with their shopping cart. It displays a range of books, including popular titles like Hop on Pop, Fox in Socks, The Cat in the Hat, and A Fly Went By, each with an option to add them to the cart. Users can view the contents of their shopping cart, which shows the books they have selected. Additionally, there is a button available that allows users to remove the last added book from the cart.
+#### Online Bookstore
+The **Online Bookstore** page allows customers to browse a selection of books available for purchase, including *Hop on Pop*, *Fox in Socks*, *The Cat in the Hat*, and *A Fly Went By*. Customers can add books to their cart by clicking a "+" button next to each book. The page displays a shopping cart with the selected books, and users can remove the last added book by clicking the "-" button. A "No books in cart" message is displayed when the cart is empty.
 
-##### Features
+#### Restaurant Menu
+The **Restaurant Menu** page is for a local restaurant that sells hamburgers, cheeseburgers, fries, and onion rings. Customers can add items to their cart by clicking a "+" button next to each menu item. The cart is updated in real time, and users can remove the last item added by clicking a "-" button. If no items are in the cart, the page displays a message indicating that the cart is empty.
 
-Users can browse through a list of available books on the page. Each book is displayed with a button, which allows users to select and add the book to their shopping cart. The available books include popular titles such as Hop on Pop, Fox in Socks, The Cat in the Hat, and A Fly Went By, providing a variety of choices for users to explore.
-
-The shopping cart is conveniently displayed below the list of books. It shows the titles that the user has added, allowing them to review their selections before proceeding with any further actions. The cart automatically updates as users add or remove books.
-
-Additionally, there is a button provided to remove the last book added to the cart. This feature is designed to give users flexibility in managing their selections, allowing them to make adjustments as needed with a single click.
-
+#### Flower Shop
+The **Flower Shop** page showcases available flowers, including Roses, Tulips, Daisies, and Lilies. Customers can add these flowers to their cart by clicking the "+" button next to each flower. The cart dynamically updates to reflect the selected items. Users can remove the last flower added to the cart by clicking the "-" button. If the cart is empty, a message is displayed to let users know that no flowers are currently in their cart.
 
 ### Design Choices 
 
