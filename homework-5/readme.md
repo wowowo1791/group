@@ -8,11 +8,11 @@ Each webpage featured core elements such as a list of available items (whether b
 
 ### Live Link
 
-[Main Page](https://github.com/wowowo1791/group/tree/main) 
+[Main Page](https://wowowo1791.github.io/group/) 
 
-[Homework-5] (https://github.com/wowowo1791/group/tree/main/homework-5)
+[Homework-5] (https://wowowo1791.github.io/group/homework-5) 
 
-[Online BookStore](https://github.com/wowowo1791/group/tree/main/homework-5/onlinebookstore.html) 
+[Online BookStore](https://wowowo1791.github.io/group/homework-5/onlinebookstore.html)
 
 ### Key Takeaways
 
