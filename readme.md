@@ -2,7 +2,9 @@
 
 ### Project Summary
 
-Brief description of your what your project is about and why you chose that topic.
+For this project, we were tasked with developing various online ordering systems for different scenarios, where each scenario involved creating a menu of items that users could add to their shopping cart. We focused on applying DOM manipulation using JavaScript, working with arrays, and utilizing loops to handle the interactions between users and the items they select. The scenarios included building an online bookstore, a restaurant menu, an amusement park ticket system, and a flower shop.
+
+Each webpage featured core elements such as a list of available items (whether books, _____, or ______), a shopping cart to track selections, and functionality to allow users to remove the last item they added. The project allowed us to practice creating interactive elements that enhance user experience, while also refining our understanding of JavaScript logic for dynamic content generation and manipulation. We chose this project to further develop our skills in JavaScript and DOM manipulation while working as a team to build cohesive, functional web applications.
 
 ### Live Link
 
@@ -15,6 +17,7 @@ Brief description of your what your project is about and why you chose that topi
 Understanding of why we are doing this project
 
 ### Core Webpages
+
 #### Online Bookstore Page
 
 The Online Bookstore Page serves as the main interface for users to browse through a selection of available books and interact with their shopping cart. It displays a range of books, including popular titles like Hop on Pop, Fox in Socks, The Cat in the Hat, and A Fly Went By, each with an option to add them to the cart. Users can view the contents of their shopping cart, which shows the books they have selected. Additionally, there is a button available that allows users to remove the last added book from the cart.
