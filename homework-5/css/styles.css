@@ -20,8 +20,8 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
-    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
 }
 
 nav a:hover {
@@ -45,11 +45,6 @@ h2 {
 }
 
 button {
-   
-    color: black;
-    
-   
-  
-    
-  
+    color: black; 
+    margin-left: 10px;
 }
