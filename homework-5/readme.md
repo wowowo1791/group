@@ -10,7 +10,7 @@ Each webpage featured core elements such as a list of available items (whether b
 
 [Main Page](https://wowowo1791.github.io/group/) 
 
-[Homework-5] (https://wowowo1791.github.io/group/homework-5) 
+[Homework-5](https://wowowo1791.github.io/group/homework-5) 
 
 [Online BookStore](https://wowowo1791.github.io/group/homework-5/onlinebookstore.html)
 
