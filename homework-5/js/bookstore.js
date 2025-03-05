@@ -1,44 +1,58 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const booksList = document.getElementById("books");
-    const cartList = document.getElementById("cart");
-    const noBooksMessage = document.getElementById("no-books");
-    const removeButton = document.getElementById("remove-book");
-    
-    const availableBooks = ["Hop on Pop", "Fox in Socks", "The Cat in the Hat", "A Fly Went By"];
-    let cart = [];
+const availableBooksList = document.querySelector("#books");
+const shoppingCartList = document.querySelector("#cart");
+const removeBookButton = document.querySelector("#remove-book");
+const noBookMessage = document.querySelector("#no-books");
 
-    function updateCart() {
-        cartList.innerHTML = "";
-        for (let i = 0; i < cart.length; i++) {
-            const li = document.createElement("li");
-            li.textContent = cart[i];
-            cartList.appendChild(li);
-        }
-        noBooksMessage.style.display = cart.length ? "none" : "block";
-    }
+const availableBooks = [
+  "Hop on Pop",
+  "Fox in Socks",
+  "The Cat in the Hat",
+  "A Fly Went By",
+];
+const shoppingCart = [];
 
-    for (let i = 0; i < availableBooks.length; i++) {
-        const li = document.createElement("li");
-        li.textContent = availableBooks[i] + " ";
-        
-        const button = document.createElement("button");
-        button.textContent = "+";
-        button.setAttribute("data-item", availableBooks[i]);
-        button.addEventListener("click", function() {
-            cart.push(this.getAttribute("data-item"));
-            updateCart();
-        });
-        
-        li.appendChild(button);
-        booksList.appendChild(li);
-    }
+function showShoppingCart() {
+  shoppingCartList.innerHTML = "";
+  shoppingCart.forEach((book) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = book;
+    shoppingCartList.appendChild(listItem);
+  });
+  
+  if (shoppingCart.length === 0) {
+    noBookMessage.style.display = "block";
+  } else {
+    noBookMessage.style.display = "none";
+  }
+  
+  removeBookButton.disabled = shoppingCart.length === 0;
+}
 
-    removeButton.addEventListener("click", function() {
-        if (cart.length) {
-            cart.pop();
-            updateCart();
-        }
-    });
+function addBookToCart(e) {
+  shoppingCart.push(e.target.dataset.name);
+  showShoppingCart();
+}
 
-    updateCart();
-});
+function removeLastBook() {
+  if (shoppingCart.length > 0) {
+    shoppingCart.pop();
+    showShoppingCart();
+  }
+}
+
+for (let i = 0; i < availableBooks.length; i++) {
+  const bookItem = document.createElement("li");
+  bookItem.innerText = availableBooks[i];
+
+  const addButton = document.createElement("button");
+  addButton.innerText = "+";
+  addButton.dataset.name = availableBooks[i];
+  addButton.addEventListener("click", addBookToCart);
+  
+  bookItem.appendChild(addButton);
+  availableBooksList.appendChild(bookItem);
+}
+
+removeBookButton.addEventListener("click", removeLastBook);
+showShoppingCart();
+
