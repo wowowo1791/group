@@ -1,0 +1,55 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    color: black;
+    text-align: left; 
+    line-height: 2;  
+    padding: 10px;
+}
+
+nav {
+    height: 50px;
+    padding: 10px;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    font-size: 32px;
+    color: black;
+}
+
+h2 {
+    font-size: 26px; 
+    color: black;
+    margin-bottom: 0;
+}
+
+button {
+   
+    color: black;
+    
+   
+  
+    
+  
+}
