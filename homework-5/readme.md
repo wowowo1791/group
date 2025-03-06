@@ -2,9 +2,7 @@
 
 ### Project Summary
 
-For this project, we were tasked with developing various online ordering systems for different scenarios, where each scenario involved creating a menu of items that users could add to their shopping cart. We focused on applying DOM manipulation using JavaScript, working with arrays, and utilizing loops to handle the interactions between users and the items they select. The scenarios included building an online bookstore, a restaurant menu, an amusement park ticket system, and a flower shop.
-
-Each webpage featured core elements such as a list of available items (whether books, flowers, or foods), a shopping cart to track selections, and functionality to allow users to remove the last item they added. The project allowed us to practice creating interactive elements that enhance user experience, while also refining our understanding of JavaScript logic for dynamic content generation and manipulation. We chose this project to further develop our skills in JavaScript and DOM manipulation while working as a team to build cohesive, functional web applications.
+In this project, we are programming three pages to enable users to add and remove items from their carts, and see what items they have in their cart. All five scenarios that were available were similar to each other, so we chose the first three to work on.
 
 ### Live Link
 
@@ -12,7 +10,7 @@ Each webpage featured core elements such as a list of available items (whether b
 
 ### Key Takeaways
 
-Understanding of why we are doing this project
+We are doing this project to get more experience with programming the framework of basic frameworks, for example managing items in a cart. The applications of what we are programming are also similar to pages done by retail industries, like Kroger or Walmart, but on a basic level.
 
 ### Core Webpages
 
