@@ -1,0 +1,10 @@
+body {
+  background: black;
+  /* other options for background:
+  url("outerSpace.png") no-repeat right top; */
+  color: white;
+}
+
+nav {
+    text-decoration: overline underline;
+}
