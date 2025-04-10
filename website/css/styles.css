@@ -3,8 +3,38 @@ body {
   /* other options for background:
   url("outerSpace.png") no-repeat right top; */
   color: white;
+  font-family: "Lucida Console", "Monaco", "Courier New", Courier, monospace;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: overline underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
 }
 
 nav {
-    text-decoration: overline underline;
+  text-decoration: overline underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  font-family: "Lucida Console", "Monaco", "Courier New", Courier, monospace;
+  /* other options for text:
+    text-decoration-color: yellow;
+    font-variant: small-caps;
+  */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
 }
