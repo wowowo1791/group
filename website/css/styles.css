@@ -8,7 +8,9 @@ body {
 }
 
 body a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
   color: white;
   cursor: crosshair;
 }
@@ -17,6 +19,8 @@ a:hover {
   text-decoration: overline underline;
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
+  color: black;
+  background-color: white;
 }
 
 nav {

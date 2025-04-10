@@ -1,0 +1,19 @@
+/* Background Colors
+0% White = Black #000000
+25% White = 
+50% White = Gray #808080
+75% White = 
+100% White = White #FFFFFF
+LightGray #D3D3D3
+DarkGrey #A9A9A9
+ */
+
+body {
+  background: black;
+  color: white;
+}
+
+50 {
+  background: #808080;
+  color: white;
+}
