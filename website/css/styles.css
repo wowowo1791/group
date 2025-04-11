@@ -13,7 +13,7 @@ body a {
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
   color: white;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 a:hover {
@@ -38,7 +38,7 @@ nav {
 nav a {
   text-decoration: none;
   color: white;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 nav a:hover {
