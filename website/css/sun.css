@@ -34,12 +34,17 @@ body {
   color: black;
 }
 
-a {
-  color: white;
-  background-color: black;
-  text-shadow: 0px 0px 1px white, 0 0 30px black;
+body a {
+  color: black;
 }
 
 a:hover {
-  text-shadow: 0px 0px 1px black, 0 0 30px white;
+  background-color: black;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background: black;
+  color: white;
 }
