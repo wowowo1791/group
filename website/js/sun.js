@@ -1,7 +1,8 @@
 // JavaScript Document
 
 function changeName() {
-  onclick = 'document.getElementById("name").innerHTML = "Sol"';
+  document.getElementById("name").innerHTML = "Sol";
+  document.getElementById("language").innerHTML = "ancient Roman";
 }
 
 if (A > 10) {
