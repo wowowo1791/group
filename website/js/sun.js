@@ -3,17 +3,19 @@ let currentName = 1;
 
 function changeName() {
   if ((currentName = 1)) {
-    document.getElementById("name").innerHTML = "Sol";
-    document.getElementById("language").innerHTML = "ancient Roman";
-    currentName = 2;
-  } else {
+    //1 means name in English
     document.getElementById("name").innerHTML = "The Sun";
     document.getElementById("language").innerHTML = "English";
-    currentName = 1;
+    currentName = 2; //2 means name in Roman
+  } else currentName = 2;
+  {
+    document.getElementById("name").innerHTML = "Sol";
+    document.getElementById("language").innerHTML = "ancient Roman";
+    currentName = 1; //1 means name in English
   }
 }
 
-changeName();
+document.getElementById("name").addEventListener("onclick", changeName);
 
 if (A > 10) {
   document.body.style.background =
