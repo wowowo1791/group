@@ -1,5 +1,23 @@
 // JavaScript Document
-let currentName = 1;
+// let currentName = 1;
+
+// function changeName() {
+//   if ((currentName = 1)) {
+//     //1 means name in English
+//     document.getElementById("name").innerHTML = "The Sun";
+//     document.getElementById("language").innerHTML = "English";
+//     currentName = 2; //2 means name in Roman
+//   } else;
+//   {
+//     document.getElementById("name").innerHTML = "Sol";
+//     document.getElementById("language").innerHTML = "ancient Roman";
+//     currentName = 1; //1 means name in English
+//   }
+// }
+
+// document.getElementById("name").addEventListener("onclick", changeName);
+
+let currentName = ["The Sun", "Sol", "Sól"];
 
 function changeName() {
   if ((currentName = 1)) {
@@ -7,7 +25,7 @@ function changeName() {
     document.getElementById("name").innerHTML = "The Sun";
     document.getElementById("language").innerHTML = "English";
     currentName = 2; //2 means name in Roman
-  } else currentName = 2;
+  } else;
   {
     document.getElementById("name").innerHTML = "Sol";
     document.getElementById("language").innerHTML = "ancient Roman";
