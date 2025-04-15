@@ -2,8 +2,8 @@
 Background Colors:
 100% white = white #FFFFFF
 75% white = LightGray #D3D3D3
-50% white = Gray #808080
-25% white = DarkGray #A9A9A9
+50% white = DarkGray #A9A9A9
+25% white = Gray #808080
 0% white = black #000000
 */
 
@@ -17,21 +17,20 @@ body {
   background: white;
   color: black;
 }
-  
+
 75 { 
   background: LightGray;
   color: black;
 }
 
 50 { 
-  background: Gray;
-  color: white;
+  background: DarkGray;
+  color: black;
 }
 
 25 { 
-  background: DarkGray;
-  color: white;
-  text-shadow: 0 0 5px black;
+  background: Gray;
+  color: black;
 }
 
 0 {
