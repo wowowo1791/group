@@ -17,8 +17,15 @@
 
 // document.getElementById("name").addEventListener("onclick", changeName);
 
-let currentName = ["The Sun", "Sol", "Sól"];
-let i = 0;
+const alias = ["The Sun", "Sol", "Sól"];
+let currentName = alias[0];
+let aliasLength = alias.length;
+
+let text = "<ul>";
+for (let i = 0; i < aliasLength; i++) {
+  text += "<li>" + alias[i] + "<li>";
+}
+text += "<ul>";
 
 function changeName() {
   if ((i = 0)) {
