@@ -49,3 +49,11 @@ if (A > 10) {
 } else if (A == 2) {
 } else {
 }
+
+let slider = document.getElementById("myRange");
+let output = document.getElementById("percentage");
+output.innerHTML = slider.value;
+
+slider.oninput = function () {
+  output.innerHTML = this.value;
+};
