@@ -43,11 +43,17 @@ function changeName() {
 
 document.getElementById("name").addEventListener("onclick", changeName);
 
-if (A > 10) {
-  document.body.style.background =
-    "#f3f3f3 url('img_tree.png') no-repeat right top";
-} else if (A == 2) {
+if ((slider.value = 5)) {
+  document.body.style.background = "#FFFFFF";
+} else if ((slider.value = 4)) {
+  document.body.style.background = "#D3D3D3";
+} else if ((slider.value = 3)) {
+  document.body.style.background = "#A9A9A9";
+} else if ((slider.value = 2)) {
+  document.body.style.background = "#808080";
 } else {
+  document.body.style.background = "#000000";
+  document.body.style.color = "#FFFFFF";
 }
 
 let slider = document.getElementById("myRange");
