@@ -1,65 +1,50 @@
 // JavaScript Document
-// let currentName = 1;
-
-// function changeName() {
-//   if ((currentName = 1)) {
-//     //1 means name in English
-//     document.getElementById("name").innerHTML = "The Sun";
-//     document.getElementById("language").innerHTML = "English";
-//     currentName = 2; //2 means name in Roman
-//   } else;
-//   {
-//     document.getElementById("name").innerHTML = "Sol";
-//     document.getElementById("language").innerHTML = "ancient Roman";
-//     currentName = 1; //1 means name in English
-//   }
-// }
-
-// document.getElementById("name").addEventListener("onclick", changeName);
 
 const alias = ["The Sun", "Sol", "Sól"];
-let currentName = alias[0];
-let aliasLength = alias.length;
+const language = ["English", "ancient Roman", "Old Norse"];
 
-let text = "<ul>";
-for (let i = 0; i < aliasLength; i++) {
-  text += "<li>" + alias[i] + "<li>";
-}
-text += "<ul>";
+let count = 0;
 
 function changeName() {
-  if ((i = 0)) {
-    //means name starts in English
-    document.getElementById("name").innerHTML = currentName[i];
-    document.getElementById("language").innerHTML = "English";
-    i++; //means the name changes to Roman
-  } else;
-  {
-    document.getElementById("name").innerHTML = currentName[i];
-    document.getElementById("language").innerHTML = "ancient Roman";
-    i = 0; //means the name changes to English
+  count++;
+  if (count > 2) {
+    count = 0;
   }
+  document.getElementById("name").innerHTML = alias[count];
+  document.getElementById("language").innerHTML = language[count];
 }
 
 document.getElementById("name").addEventListener("onclick", changeName);
 
-if ((slider.value = 5)) {
-  document.body.style.background = "#FFFFFF";
-} else if ((slider.value = 4)) {
-  document.body.style.background = "#D3D3D3";
-} else if ((slider.value = 3)) {
-  document.body.style.background = "#A9A9A9";
-} else if ((slider.value = 2)) {
-  document.body.style.background = "#808080";
-} else {
-  document.body.style.background = "#000000";
-  document.body.style.color = "#FFFFFF";
-}
-
 let slider = document.getElementById("myRange");
 let output = document.getElementById("percentage");
-output.innerHTML = slider.value;
+slider.value = 5;
+document.body.style.background = "#FFFFFF";
+document.body.style.color = "#000000";
+output.innerHTML = slider.value * 20;
 
 slider.oninput = function () {
-  output.innerHTML = this.value;
+  output.innerHTML = this.value * 20;
+  if (slider.value == 5) {
+    document.body.style.background = "#FFFFFF";
+    document.body.style.color = "#000000";
+  } else if (slider.value == 4) {
+    document.body.style.background = "#EEEEEE";
+    document.body.style.color = "#000000";
+  } else if (slider.value == 3) {
+    document.body.style.background = "#D3D3D3";
+    document.body.style.color = "#000000";
+  } else if (slider.value == 2) {
+    document.body.style.background = "#A9A9A9";
+    document.body.style.color = "#000000";
+    document.body.getElementsByClassName("slidecontainer").background =
+      "#000000";
+  } else if (slider.value == 1) {
+    document.body.style.background = "#808080";
+    document.body.style.color = "#000000";
+  } else {
+    document.body.style.background = "#000000";
+    document.body.style.color = "#FFFFFF";
+    document.body.getElementsByTagName("a").color = "#FFFFFF";
+  }
 };
