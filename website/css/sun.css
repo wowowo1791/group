@@ -53,6 +53,10 @@ nav a:hover {
   color: white;
 }
 
+#nameClick {
+  cursor: copy;
+}
+
 .slider {
   -webkit-appearance: none;
   appearance: none;

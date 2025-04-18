@@ -1,7 +1,7 @@
 // JavaScript Document
 
-const alias = ["The Sun", "Sol", "Sól"];
-const language = ["English", "ancient Roman", "Old Norse"];
+const alias = ["Sun", "Sol", "Sól"];
+const language = ["English", "Ancient Roman", "Old Norse"];
 
 let count = 0;
 
