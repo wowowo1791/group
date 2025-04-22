@@ -72,6 +72,10 @@ body.dark nav a:hover {
   cursor: copy;
 }
 
+dfn {
+  font-style: normal;
+}
+
 .slider {
   -webkit-appearance: none;
   appearance: none;

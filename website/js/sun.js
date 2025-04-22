@@ -10,11 +10,12 @@ function changeName() {
   if (count > 2) {
     count = 0;
   }
-  document.getElementById("name").innerHTML = alias[count];
+  document.getElementById("name1").innerHTML = alias[count];
   document.getElementById("language").innerHTML = language[count];
+  document.getElementById("name2").innerHTML = alias[count];
 }
 
-document.getElementById("name").addEventListener("onclick", changeName);
+document.getElementById("name1").addEventListener("onclick", changeName);
 
 let slider = document.getElementById("myRange");
 let output = document.getElementById("percentage");
