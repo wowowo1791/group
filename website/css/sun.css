@@ -43,7 +43,7 @@ body a {
 }
 
 a:hover {
-  background-color: black;
+  background: black;
   color: white;
 }
 
@@ -51,6 +51,21 @@ nav a:hover {
   text-decoration: none;
   background: black;
   color: white;
+}
+
+body.dark a {
+  color: white;
+}
+
+body.dark a:hover {
+  background: white;
+  color: black;
+}
+
+body.dark nav a:hover {
+  text-decoration: none;
+  background: white;
+  color: black;
 }
 
 #nameClick {
