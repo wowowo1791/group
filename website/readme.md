@@ -28,7 +28,7 @@ Finally, I built the Matching Game page, where users can test their knowledge th
 
 Our website is Space themed so the background is black and dark like outerspace. And the letters are white and bright like stars. We took inspiration form the NASA website and images that have been captured over the decades of space travel. Karyn also made the decision to replace the normal cursor icon with the style "cursor: crosshair", to mimic the look of precise positioning and calculating of a specific spot in physical space. And all of the links (a tags) transition the cursor to look like an arrow with a small version of the crosshair next to it ("cursor: copy").
 
-Describe your local storage data structure with rationale.
+The localStorage for this webpage is used primarily by the login system. It will store a username and password and does not clear until the user clears the storage. localStore will also be used to store the number of clicks on a planet the user made.
 
 ### Members & Responsibilities
 
