@@ -18,6 +18,7 @@ function changeName() {
 document.getElementById("name1").addEventListener("onclick", changeName);
 
 let slider = document.getElementById("myRange");
+let button = document.getElementById("button");
 let output = document.getElementById("percentage");
 slider.value = 5;
 document.body.style.background = "#FFFFFF";
@@ -34,6 +35,7 @@ slider.oninput = function () {
   } else if (slider.value == 4) {
     document.body.style.background = "#EEEEEE";
     document.body.style.color = "#000000";
+    button.style.background = "#808080";
   } else if (slider.value == 3) {
     document.body.style.background = "#D3D3D3";
     document.body.style.color = "#000000";
@@ -44,6 +46,7 @@ slider.oninput = function () {
   } else if (slider.value == 1) {
     document.body.style.background = "#808080";
     document.body.style.color = "#000000";
+    button.style.background = "#808080";
   } else {
     document.body.style.background = "#000000";
     document.body.style.color = "#FFFFFF";
