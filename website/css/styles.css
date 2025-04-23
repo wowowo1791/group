@@ -53,6 +53,11 @@ h1 {
   font-weight: bolder;
 }
 
+h2 {
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+
 h6 {
   font-weight: lighter;
 }
