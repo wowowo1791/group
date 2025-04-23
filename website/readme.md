@@ -4,7 +4,7 @@
 
 ### Project Summary
 
-Brief description of your what your project is about and why you chose that topic. Describe how topic relates to category.
+For this project our team is creating an informational webpage about planets in space along with mythological facts related to them. This helps us practice the skills we've learned over the semester. We are focusing on The Sun, Jupiter, and Saturn. We chose this topic because it was interesting to us, this webpage aligns with the topic of Space / Astronomy.
 
 ### Live Link
 
@@ -12,9 +12,7 @@ Brief description of your what your project is about and why you chose that topi
 
 ### Key Takeaways
 
-What have you learned or practiced that aided in the completion of your project.
-
-During this semester, we learned JavaScript exercises and tool. These techniques ...
+Through this semester, we have learned to authenticate users using localStorage, integrate APIs, and how to make our webpages more interactive. We will practice using those skills while working on this project. All the pages also need to be styled and be consistent across each page. Along with that, we are learning to collaborate with others, which is a useful skill to have in the industry.
 
 ### Core Webpages
 
