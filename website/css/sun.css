@@ -68,6 +68,19 @@ body.dark nav a:hover {
   color: black;
 }
 
+.login-btn {
+  background-color: white;
+  color: black;
+  border: 2px dotted black;
+}
+
+.login-btn:hover {
+  background-color: black;
+  color: white;
+  text-shadow: none;
+  border-color: white;
+}
+
 #nameClick {
   cursor: copy;
 }
