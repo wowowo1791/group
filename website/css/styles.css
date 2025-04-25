@@ -62,6 +62,11 @@ h6 {
   font-weight: lighter;
 }
 
+#footer {
+  position: fixed;
+  bottom: 5px;
+}
+
 ul.a {
   list-style-type: circle;
 }
