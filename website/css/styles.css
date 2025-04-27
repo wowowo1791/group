@@ -93,6 +93,50 @@ p {
   font-size: 1em;
 }
 
+#divTable {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: 2px solid white;
+  border-radius: 10px;
+  border-style: dotted;
+}
+
+th {
+  font-size: 1.1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+td {
+  border: 1px solid white;
+  color: black;
+  background: white;
+  /* border-collapse: collapse; */
+  border-radius: 10px;
+  border-style: dotted;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+td:nth-child(even) {
+  background-color: #a9a9a9;
+}
+
+th:hover {
+  color: black;
+  background: white;
+}
+
+td:hover {
+  color: white;
+  background: black;
+}
+
 #footer {
   position: fixed;
   width: 100%;
