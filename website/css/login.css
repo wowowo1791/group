@@ -34,7 +34,7 @@ button:hover {
   border: 2px dotted white;
   padding: 8px 16px;
   font-size: 14px;
-  text-decoration: overline underline;
+  /* text-decoration: overline underline; */
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
   cursor: copy;
