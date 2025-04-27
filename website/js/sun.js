@@ -18,7 +18,7 @@ function changeName() {
 document.getElementById("name1").addEventListener("onclick", changeName);
 
 let slider = document.getElementById("myRange");
-let button = document.getElementById("button");
+// let button = document.getElementById("button");
 let output = document.getElementById("percentage");
 slider.value = 5;
 document.body.style.background = "#FFFFFF";
@@ -28,33 +28,33 @@ output.innerHTML = slider.value * 20;
 slider.oninput = function () {
   output.innerHTML = this.value * 20;
   slider.style.background = "";
-  button.style.background = "";
+  // button.style.background = "";
   document.querySelector("#darkMode").classList.remove("dark");
   if (slider.value == 5) {
     document.body.style.background = "#FFFFFF";
     document.body.style.color = "#000000";
-    button.style.background = "#FFFFFF";
+    // button.style.background = "#FFFFFF";
   } else if (slider.value == 4) {
     document.body.style.background = "#EEEEEE";
     document.body.style.color = "#000000";
-    button.style.background = "#EEEEEE";
+    // button.style.background = "#EEEEEE";
   } else if (slider.value == 3) {
     document.body.style.background = "#D3D3D3";
     document.body.style.color = "#000000";
-    button.style.background = "#D3D3D3";
+    // button.style.background = "#D3D3D3";
   } else if (slider.value == 2) {
     document.body.style.background = "#A9A9A9";
     document.body.style.color = "#000000";
-    button.style.background = "#A9A9A9";
+    // button.style.background = "#A9A9A9";
     slider.style.background = "#D3D3D3";
   } else if (slider.value == 1) {
     document.body.style.background = "#808080";
     document.body.style.color = "#000000";
-    button.style.background = "#808080";
+    // button.style.background = "#808080";
   } else {
     document.body.style.background = "#000000";
     document.body.style.color = "#FFFFFF";
-    button.style.background = "#000000";
+    // button.style.background = "#000000";
     document.querySelector("#darkMode").classList.add("dark");
   }
 };
