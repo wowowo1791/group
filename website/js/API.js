@@ -30,7 +30,14 @@ async function nameGet() {
           <td>${nameCurrent.latin}</td>
           <td>${nameCurrent.greek}</td>
           <td>${nameCurrent.greekLetters}</td>
-          <td>Picture</td>
+          <td class="picture">
+            <img
+              src="pictures/like0Sun.png"
+              alt="Cipart of a planet with a Thumps Up gesture"
+              width="26"
+              height="20"
+            />
+          </td>
           <td>0</td>
         </tr>
       `;

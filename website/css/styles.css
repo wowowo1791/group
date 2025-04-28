@@ -123,6 +123,12 @@ td {
   padding-right: 10px;
 }
 
+td.picture {
+  padding-top: 3px;
+  padding-bottom: 0px;
+  cursor: copy;
+}
+
 td:nth-child(even) {
   background-color: #a9a9a9;
 }
