@@ -32,7 +32,7 @@ async function nameGet() {
           <td>${nameCurrent.greekLetters}</td>
           <td class="picture">
             <img
-              src="pictures/like0Sun.png"
+              src="${nameCurrent.img}"
               alt="Cipart of a planet with a Thumps Up gesture"
               width="26"
               height="20"

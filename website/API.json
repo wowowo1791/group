@@ -4,13 +4,15 @@
     "roman": "Sol",
     "latin": "Sol",
     "greek": "Helios",
-    "greekLetters": "ἥλιος"
+    "greekLetters": "ἥλιος",
+    "img": "pictures/like0Sun.png"
   },
   {
     "english": "Mercury",
     "roman": "Mercury",
     "latin": "Mercurius",
     "greek": "Hermes",
-    "greekLetters": "Ἑρμής"
+    "greekLetters": "Ἑρμής",
+    "img": "pictures/like1Mercury.png"
   }
 ]
