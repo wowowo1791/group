@@ -54,6 +54,8 @@ slider.oninput = function () {
   } else {
     document.body.style.background = "#000000";
     document.body.style.color = "#FFFFFF";
+    // document.body.style.backgroundImage =
+    // "url('../pictures/stars_background.png') |none|initial|inherit";
     // button.style.background = "#000000";
     document.querySelector("#darkMode").classList.add("dark");
   }
