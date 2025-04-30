@@ -1,7 +1,8 @@
 body {
   background: black;
-  /* other options for background:
-  url("outerSpace.png") no-repeat right top; */
+  /* other options for background:*/
+  background-image: url("../pictures/stars_background.png");
+  background-position: center top;
   color: white;
   font-family: "Lucida Console", "Monaco", "Courier New", Courier, monospace;
   text-align: center;
@@ -117,14 +118,14 @@ td {
   /* border-collapse: collapse; */
   border-radius: 10px;
   border-style: dotted;
-  padding-top: 1px;
+  padding-top: 3px;
   padding-bottom: 1px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 td.picture {
-  padding-top: 3px;
+  padding-top: 5px;
   padding-bottom: 0px;
   cursor: copy;
 }

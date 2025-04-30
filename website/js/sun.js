@@ -1,13 +1,21 @@
 // JavaScript Document
 
-const alias = ["Sun", "Sol", "Sól"];
-const language = ["English", "Ancient Roman", "Old Norse"];
+const alias = ["Sun", "Sol", "Sól", "Helios", "ἥλιος", "Shamash", "Surya"];
+const language = [
+  "English",
+  "Ancient Roman",
+  "Latin",
+  "Ancient Greek",
+  "Greek Letters",
+  "Sumerian",
+  "Sanskrit",
+];
 
 let count = 0;
 
 function changeName() {
   count++;
-  if (count > 2) {
+  if (count > 6) {
     count = 0;
   }
   document.getElementById("name1").innerHTML = alias[count];
@@ -54,6 +62,8 @@ slider.oninput = function () {
   } else {
     document.body.style.background = "#000000";
     document.body.style.color = "#FFFFFF";
+    // document.body.style.backgroundImage =
+    // "url('../pictures/stars_background.png') |none|initial|inherit";
     // button.style.background = "#000000";
     document.querySelector("#darkMode").classList.add("dark");
   }

@@ -2,9 +2,11 @@
   {
     "english": "Sun",
     "roman": "Sol",
-    "latin": "Sol",
+    "latin": "Sól",
     "greek": "Helios",
     "greekLetters": "ἥλιος",
+    "sumerian": "Shamash",
+    "sanskrit": "Surya",
     "img": "pictures/like0Sun.png"
   },
   {
@@ -13,6 +15,68 @@
     "latin": "Mercurius",
     "greek": "Hermes",
     "greekLetters": "Ἑρμής",
+    "sumerian": "Nabu",
+    "sanskrit": "Budha",
     "img": "pictures/like1Mercury.png"
+  },
+  {
+    "english": "Venus",
+    "roman": "Venus",
+    "latin": "Aurōra",
+    "greek": "Aphrodite",
+    "greekLetters": "Ἀφροδίτη",
+    "sumerian": "Ishtar",
+    "sanskrit": "Shukra",
+    "img": "pictures/like2Venus.png"
+  },
+  {
+    "english": "Mars",
+    "roman": "Mars",
+    "latin": "Martius",
+    "greek": "Ares",
+    "greekLetters": "Πυρόεις",
+    "sumerian": "Nergal",
+    "sanskrit": "Mangala",
+    "img": "pictures/like4Mars.png"
+  },
+  {
+    "english": "Jupiter",
+    "roman": "Jupiter",
+    "latin": "Luppiter",
+    "greek": "Zeus",
+    "greekLetters": "Δίας",
+    "sumerian": "Marduk",
+    "sanskrit": "Brihaspati",
+    "img": "pictures/like5Jupiter.png"
+  },
+  {
+    "english": "Saturn",
+    "roman": "Saturn",
+    "latin": "Sāturnus",
+    "greek": "Cronus",
+    "greekLetters": "Κρόνος",
+    "sumerian": "Ninurta",
+    "sanskrit": "Shani",
+    "img": "pictures/like6Saturn.png"
+  },
+  {
+    "english": "Uranus",
+    "roman": "Caelus",
+    "latin": "Uranus",
+    "greek": "Uranus",
+    "greekLetters": "Οὐρανός",
+    "sumerian": "(not discovered)",
+    "sanskrit": "(not discovered)",
+    "img": "pictures/like7Uranus.png"
+  },
+  {
+    "english": "Neptune",
+    "roman": "Neptune",
+    "latin": "Neptūnus",
+    "greek": "Poseidon",
+    "greekLetters": "Ποσειδῶν",
+    "sumerian": "(not discovered)",
+    "sanskrit": "(not discovered)",
+    "img": "pictures/like8Neptune.png"
   }
 ]

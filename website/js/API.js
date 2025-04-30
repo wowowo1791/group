@@ -14,8 +14,9 @@ async function nameGet() {
         <th>Latin</th>
         <th>Ancient Greek</th>
         <th>Greek Letters</th>
-        <th>Likes</th>
-        <th>Number</th>
+        <th>Sumerian</th>
+        <th>Sanskrit</th>
+        <th>Liked</th>
       </tr>
     `;
 
@@ -30,6 +31,8 @@ async function nameGet() {
           <td>${nameCurrent.latin}</td>
           <td>${nameCurrent.greek}</td>
           <td>${nameCurrent.greekLetters}</td>
+          <td>${nameCurrent.sumerian}</td>
+          <td>${nameCurrent.sanskrit}</td>
           <td class="picture">
             <img
               src="${nameCurrent.img}"
@@ -38,7 +41,6 @@ async function nameGet() {
               height="20"
             />
           </td>
-          <td>0</td>
         </tr>
       `;
     }
