@@ -2,7 +2,7 @@ body {
   background: black;
   /* other options for background:*/
   background-image: url("../pictures/stars_background.png");
-  background-position: center;
+  background-position: center top;
   color: white;
   font-family: "Lucida Console", "Monaco", "Courier New", Courier, monospace;
   text-align: center;
