@@ -1,7 +1,7 @@
 body {
   background: black;
-  /* other options for background:
-  url("outerSpace.png") no-repeat right top; */
+  /* other options for background:*/
+  background-image: url("stars_background.png"); /* Has to be in css folder for it to work */
   color: white;
   font-family: "Lucida Console", "Monaco", "Courier New", Courier, monospace;
   text-align: center;
