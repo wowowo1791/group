@@ -1,13 +1,21 @@
 // JavaScript Document
 
-const alias = ["Sun", "Sol", "Sól"];
-const language = ["English", "Ancient Roman", "Old Norse"];
+const alias = ["Sun", "Sol", "Sól", "Helios", "ἥλιος", "Shamash", "Surya"];
+const language = [
+  "English",
+  "Ancient Roman",
+  "Latin",
+  "Ancient Greek",
+  "Greek Letters",
+  "Sumerian",
+  "Sanskrit",
+];
 
 let count = 0;
 
 function changeName() {
   count++;
-  if (count > 2) {
+  if (count > 6) {
     count = 0;
   }
   document.getElementById("name1").innerHTML = alias[count];
