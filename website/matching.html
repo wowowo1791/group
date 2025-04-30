@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>▓ Matching Game ─ Our Solar System ▓</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/matching.css" />
   </head>
   <body>
     <div>
@@ -19,14 +19,14 @@
       </nav>
     </div>
 
-    <div>
-      <h1>Matching Game</h1>
+    <div class="game-container">
+      <h2>Space Memory Match</h2>
+      <p id="userDisplay"></p>
+      <p>Score: <span id="score">0</span></p>
+      <div class="grid" id="cardGrid"></div>
+      <button onclick="resetGame()">Reset Game</button>
     </div>
-
-    <div>
-      <p></p>
-    </div>
-
+  
     <script src="js/matching.js"></script>
   </body>
-</html>
+  </html>

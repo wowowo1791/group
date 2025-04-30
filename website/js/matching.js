@@ -1,28 +1,40 @@
-const symbols = ["🌕", "🚀", "🛰️", "🪐", "👨‍🚀", "🌌", "☄️", "🛸"];
 let cards = [];
 let firstCard = null;
 let secondCard = null;
 let lockBoard = false;
 let score = 0;
 
-function initGame() {
+async function initGame() {
   const user = localStorage.getItem("currentUser");
   document.getElementById("userDisplay").innerText = user
     ? `Player: ${user}`
     : "Not logged in";
 
   score = 0;
-  cards = [...symbols, ...symbols]
+  document.getElementById("score").innerText = score;
+
+  await fetchNasaImages();
+  renderGrid();
+}
+
+async function fetchNasaImages() {
+  const response = await fetch('https://images-api.nasa.gov/search?q=planet&media_type=image');
+  const data = await response.json();
+  const items = data.collection.items;
+
+
+  const images = items.slice(0, 8).map(item => item.links[0].href);
+
+
+  cards = [...images, ...images] 
     .sort(() => 0.5 - Math.random())
-    .map((symbol, index) => ({
+    .map((url, index) => ({
       id: index,
-      symbol: symbol,
+      imageUrl: url,
       matched: false,
     }));
-
-  renderGrid();
-  loadScore();
 }
+
 
 function renderGrid() {
   const grid = document.getElementById("cardGrid");
@@ -32,16 +44,22 @@ function renderGrid() {
     const div = document.createElement("div");
     div.classList.add("card");
     div.setAttribute("data-id", card.id);
-    div.innerText = "";
-    div.addEventListener("click", () => flipCard(div, card));
+
+    const img = document.createElement("img");
+    img.src = card.imageUrl;
+    img.style.visibility = "hidden"; 
+    img.classList.add("card-img");
+
+    div.appendChild(img);
+    div.addEventListener("click", () => flipCard(div, card, img));
     grid.appendChild(div);
   });
 }
 
-function flipCard(div, card) {
+function flipCard(div, card, img) {
   if (lockBoard || card.matched || div.classList.contains("flipped")) return;
 
-  div.innerText = card.symbol;
+  img.style.visibility = "visible";
   div.classList.add("flipped");
 
   if (!firstCard) {
@@ -55,21 +73,21 @@ function flipCard(div, card) {
 function checkMatch() {
   lockBoard = true;
 
-  const match = firstCard.card.symbol === secondCard.card.symbol;
+  const match = firstCard.card.imageUrl === secondCard.card.imageUrl;
 
   if (match) {
     firstCard.card.matched = true;
     secondCard.card.matched = true;
     updateScore();
     setTimeout(() => {
-      firstCard.div.style.backgroundColor = "#66bb6a"; // green for match
+      firstCard.div.style.backgroundColor = "#66bb6a";
       secondCard.div.style.backgroundColor = "#66bb6a";
       resetSelection();
     }, 300);
   } else {
     setTimeout(() => {
-      firstCard.div.innerText = "";
-      secondCard.div.innerText = "";
+      firstCard.div.querySelector("img").style.visibility = "hidden";
+      secondCard.div.querySelector("img").style.visibility = "hidden";
       firstCard.div.classList.remove("flipped");
       secondCard.div.classList.remove("flipped");
       resetSelection();
@@ -89,15 +107,6 @@ function updateScore() {
   const user = localStorage.getItem("currentUser");
   if (user) {
     localStorage.setItem(`score_${user}`, score);
-  }
-}
-
-function loadScore() {
-  const user = localStorage.getItem("currentUser");
-  if (user) {
-    const saved = parseInt(localStorage.getItem(`score_${user}`));
-    score = isNaN(saved) ? 0 : saved;
-    document.getElementById("score").innerText = score;
   }
 }
 
