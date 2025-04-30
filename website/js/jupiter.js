@@ -1,5 +1,5 @@
 const jupiter = document.getElementById("JUPITER");
-let totalClicks = 0;
+let totalClicks = JSON.parse(localStorage.getItem("timesClickedOnJupiter"));
 // let expSwitch = 0;
 jupiter.onmouseover = beBiggerJupiter;
 jupiter.onmouseout = original;

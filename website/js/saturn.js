@@ -1,5 +1,5 @@
 const saturn = document.getElementById("SATURN");
-let totalClicks = 0;
+let totalClicks = JSON.parse(localStorage.getItem("timesClickedOnSaturn"));
 // let expSwitch = 0;
 saturn.onmouseover = meh;
 saturn.onmouseout = original;
