@@ -1,5 +1,7 @@
 function login() {
   const username = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value;
+
   const currentUser = localStorage.getItem('currentUser');
 
   if (currentUser) {
@@ -7,13 +9,14 @@ function login() {
     return;
   }
 
-  if (username) {
+  if (username && password) {
     localStorage.setItem('currentUser', username);
+    localStorage.setItem(`password_${username}`, password); 
     alert(`Welcome, ${username}! Redirecting to the Home page...`);
     updateWelcome();
-    window.location.href = 'index.html'; 
+    window.location.href = 'index.html';
   } else {
-    alert("Please enter a username.");
+    alert("Please enter both username and password.");
   }
 }
 
@@ -22,9 +25,11 @@ function logout() {
   if (user) {
     alert(`${user} has been logged out.`);
     localStorage.removeItem('currentUser');
+    localStorage.removeItem(`password_${user}`); 
   }
 
   document.getElementById('username').value = '';
+  document.getElementById('password').value = '';
   updateWelcome();
 }
 
