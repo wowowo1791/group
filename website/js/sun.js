@@ -60,10 +60,8 @@ slider.oninput = function () {
     document.body.style.color = "#000000";
     // button.style.background = "#808080";
   } else {
-    document.body.style.background = "#000000";
+    document.body.style.background = "url('pictures/stars_background.png')";
     document.body.style.color = "#FFFFFF";
-    // document.body.style.backgroundImage =
-    // "url('../pictures/stars_background.png') |none|initial|inherit";
     // button.style.background = "#000000";
     document.querySelector("#darkMode").classList.add("dark");
   }
