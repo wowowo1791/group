@@ -22,16 +22,18 @@
     <div class="login-container">
       <h1>Log In Space Explorer</h1>
       <br />
-      <input type="text" id="username" placeholder="Enter your username" />
-      <input type="password" id="password" placeholder="Enter your password" />
-      <button onclick="login()">Login</button>
-      <button onclick="logout()">Logout</button>
-    <div class="message" id="welcomeMessage"></div>    </div>
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Enter your username" />
+        <input type="password" id="password" placeholder="Enter your password" />
+      </div>
+      
+      <div class="button-row">
+        <button onclick="login()">Login</button>
+        <button onclick="logout()">Logout</button>
+      </div>
 
-
-
-
-
+      <div class="message" id="welcomeMessage"></div>    
+    </div>
 
     <script src="js/login.js"></script>
   </body>

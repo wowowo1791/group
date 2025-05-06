@@ -4,51 +4,45 @@ let secondCard = null;
 let lockBoard = false;
 let score = 0;
 
+window.onload = initGame;
+
 async function initGame() {
   const user = localStorage.getItem("currentUser");
-  document.getElementById("userDisplay").innerText = user
-    ? `Player: ${user}`
-    : "Not logged in";
+  document.getElementById("userDisplay").innerText = user ? `Player: ${user}` : "Not logged in";
 
-  score = 0;
-  document.getElementById("score").innerText = score;
-
-  await fetchNasaImages();
-  renderGrid();
+  loadScore(); 
+  await loadImages(); 
+  createCards(); 
 }
 
-async function fetchNasaImages() {
+async function loadImages() {
   const response = await fetch('https://images-api.nasa.gov/search?q=planet&media_type=image');
   const data = await response.json();
   const items = data.collection.items;
 
+  const images = items.slice(0, 8).map(item => item.links[0].href); 
+  const all = [...images, ...images].sort(() => 0.5 - Math.random()); 
 
-  const images = items.slice(0, 8).map(item => item.links[0].href);
-
-
-  cards = [...images, ...images] 
-    .sort(() => 0.5 - Math.random())
-    .map((url, index) => ({
-      id: index,
-      imageUrl: url,
-      matched: false,
-    }));
+  cards = all.map((url, index) => ({
+    id: index,
+    imageUrl: url,
+    matched: false,
+  }));
 }
 
-
-function renderGrid() {
+function createCards() {
   const grid = document.getElementById("cardGrid");
   grid.innerHTML = "";
 
-  cards.forEach((card) => {
+  cards.forEach(card => {
     const div = document.createElement("div");
-    div.classList.add("card");
-    div.setAttribute("data-id", card.id);
+    div.className = "card";
+    div.dataset.id = card.id;
 
     const img = document.createElement("img");
     img.src = card.imageUrl;
-    img.style.visibility = "hidden"; 
-    img.classList.add("card-img");
+    img.className = "card-img";
+    img.style.visibility = "hidden";
 
     div.appendChild(img);
     div.addEventListener("click", () => flipCard(div, card, img));
@@ -72,17 +66,16 @@ function flipCard(div, card, img) {
 
 function checkMatch() {
   lockBoard = true;
+  const isMatch = firstCard.card.imageUrl === secondCard.card.imageUrl;
 
-  const match = firstCard.card.imageUrl === secondCard.card.imageUrl;
-
-  if (match) {
+  if (isMatch) {
     firstCard.card.matched = true;
     secondCard.card.matched = true;
-    updateScore();
+    addScore();
     setTimeout(() => {
       firstCard.div.style.backgroundColor = "#66bb6a";
       secondCard.div.style.backgroundColor = "#66bb6a";
-      resetSelection();
+      clearSelection();
     }, 300);
   } else {
     setTimeout(() => {
@@ -90,24 +83,37 @@ function checkMatch() {
       secondCard.div.querySelector("img").style.visibility = "hidden";
       firstCard.div.classList.remove("flipped");
       secondCard.div.classList.remove("flipped");
-      resetSelection();
+      clearSelection();
     }, 1000);
   }
 }
 
-function resetSelection() {
+function clearSelection() {
   firstCard = null;
   secondCard = null;
   lockBoard = false;
 }
 
-function updateScore() {
+function addScore() {
   score++;
   document.getElementById("score").innerText = score;
+
   const user = localStorage.getItem("currentUser");
   if (user) {
     localStorage.setItem(`score_${user}`, score);
   }
+}
+
+function loadScore() {
+  const user = localStorage.getItem("currentUser");
+  if (user) {
+    const saved = parseInt(localStorage.getItem(`score_${user}`));
+    score = isNaN(saved) ? 0 : saved;
+  } else {
+    score = 0;
+  }
+
+  document.getElementById("score").innerText = score;
 }
 
 function resetGame() {
@@ -115,11 +121,12 @@ function resetGame() {
   if (user) {
     localStorage.removeItem(`score_${user}`);
   }
+
+  score = 0;
   firstCard = null;
   secondCard = null;
   lockBoard = false;
-  score = 0;
+
+  document.getElementById("score").innerText = score;
   initGame();
 }
-
-window.onload = initGame;
