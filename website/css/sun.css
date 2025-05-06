@@ -36,6 +36,16 @@ body {
   background: black;
   color: white;
 }
+
+#backgroundPic {
+  background-image: url("../pictures/stars_background.png");
+  opacity: 0.5;
+  height: 800px;
+  width: 843px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 */
 
 body a {
