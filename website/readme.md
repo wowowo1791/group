@@ -22,7 +22,7 @@ The Home Page, developed by Karyn, introduces users to the theme of space explor
 
 Karyn also developed the Sun Page, which provides interesting information about the Sun and features a real-time API integration to enhance its educational value. Anthony was responsible for the Jupiter and Saturn pages, which allow users to view, add, edit, and delete planet facts. These features demonstrate CRUD functionality using localStorage, offering an interactive way to learn and engage with planetary data.
 
-Finally, I built the Matching Game page, where users can test their knowledge through a flashcard-style matching activity. This page includes full CRUD functionality, enabling users to create, update, and delete flashcards stored locally in the browser.
+Finally, I built the Matching Game page, where users can test their knowledge through a flashcard-style matching activity using NASA API. This page includes full CRUD functionality, enabling users to create, update, and delete flashcards stored locally in the browser.
 
 ### Design Choices & Local Storage Design
 
