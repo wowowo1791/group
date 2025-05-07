@@ -1,6 +1,5 @@
 const jupiter = document.getElementById("JUPITER");
 let totalClicks = JSON.parse(localStorage.getItem("timesClickedOnJupiter"));
-// let expSwitch = 0;
 jupiter.onmouseover = beBiggerJupiter;
 jupiter.onmouseout = original;
 
@@ -8,7 +7,6 @@ jupiter.onmousedown = original;
 jupiter.onmouseup = beBiggerJupiter;
 
 jupiter.addEventListener("click", clickCounter);
-// XXXX.addEventListener("click", deleteJupiter);
 
 function beBiggerJupiter() {
     jupiter.style.width = "540px";
@@ -23,23 +21,4 @@ function original() {
 function clickCounter() {
     totalClicks += 1;
     localStorage.setItem("timesClickedOnJupiter", JSON.stringify(totalClicks));
-    /*
-    if (totalClicks => 60) {
-        if (expSwitch = 0) {
-            // change image to explosion
-            // play explosion sound
-        }
-        expSwitch = 1;
-    }
-    */
 }
-/*
-function deleteJupiter() {
-    jupiter.style.display = "none";
-    // play a pop sound here
-    // wait three seconds here
-    localStorage.removeItem("timesClickedOnJupiter");
-    expSwitch = 0;
-    jupiter.style.display = "block";
-}
-*/
