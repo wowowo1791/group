@@ -1,0 +1,54 @@
+#divTable {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: 2px solid white;
+  border-radius: 10px;
+  border-style: dotted;
+}
+
+th {
+  background: #808080;
+  font-size: 1.1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+td {
+  border: 1px solid white;
+  color: black;
+  background: white;
+  /* border-collapse: collapse; */
+  border-radius: 10px;
+  border-style: dotted;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+td:nth-child(odd) {
+  background-color: #a9a9a9;
+}
+
+td.picture {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  cursor: copy;
+}
+
+img {
+  opacity: 0.4;
+}
+
+th:hover {
+  color: black;
+  background: white;
+}
+
+td:hover {
+  color: white;
+  background: black;
+}
