@@ -10,7 +10,7 @@ Group projects we are doing over the whole semester.
 
 [Homework-5](https://wowowo1791.github.io/group/homework-5)
 
-[Website](https://wowowo1791.github.io/group/website/)
+[Website](https://wowowo1791.github.io/group/website)  
 
 ### Key Takeaways
 
