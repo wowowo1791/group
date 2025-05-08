@@ -49,4 +49,15 @@ async function nameGet() {
   }
 }
 
+async function likeGet() {
+  picture.onclick = likePlanet;
+  console.log(picture);
+}
+
+function likePlanet() {
+  const planetName = e.currentTarget.dataset.name;
+  console.log(planetName);
+  localStorage.setItem(planetName.JSON.stringify(true));
+}
+
 nameGet();
